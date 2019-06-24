@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:local="clr-namespace:CustomKeyboard"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="CustomKeyboard.MainPage">
+
+    <ScrollView>
+        <StackLayout
+            Orientation="Vertical">
+
+            <local:EntryWithCustomKeyboard 
+                x:Name="entry1"
+                HorizontalOptions="FillAndExpand"
+                Margin="0, 0, 0, 20"
+                Keyboard="Text"
+                TextColor="Black"
+                Placeholder="Custom Keyboard entry..." />
+
+            <local:EntryWithCustomKeyboard 
+                x:Name="entry2"
+                HorizontalOptions="FillAndExpand"
+                Keyboard="Text"
+                TextColor="Black"
+                Placeholder="Custom Keyboard entry 2..." />
+
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>
